@@ -1,0 +1,27 @@
+package com.mei.pattern.prototype;
+
+public class Prototype implements Cloneable{
+    private String Name;
+    private int age;
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+}
